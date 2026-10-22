@@ -23,7 +23,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <header className="text-center ">Next_Js</header>
+        {children}
+        <footer className="text-center ">@2026 Next_Js.All rights reserved.</footer>
+      </body>
     </html>
   );
 }
